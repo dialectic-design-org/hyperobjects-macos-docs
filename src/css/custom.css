@@ -1,0 +1,112 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #8a4baf;
+  --ifm-color-primary-dark: #7c439d;
+  --ifm-color-primary-darker: #754094;
+  --ifm-color-primary-darkest: #61357a;
+  --ifm-color-primary-light: #9754bd;
+  --ifm-color-primary-lighter: #9e5cc2;
+  --ifm-color-primary-lightest: #ac74cb;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-font-size-base: 15px;  /* Default is 16px */
+  --ifm-code-font-size: 13px;  /* Default is 14px */
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #b67edb;
+  --ifm-color-primary-dark: #a865d4;
+  --ifm-color-primary-darker: #a058d0;
+  --ifm-color-primary-darkest: #8636bc;
+  --ifm-color-primary-light: #c497e2;
+  --ifm-color-primary-lighter: #cca4e6;
+  --ifm-color-primary-lightest: #e2cbf1;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Content area text size */
+.markdown {
+  font-size: 0.95rem;
+}
+
+/* Make sidebar wider */
+:root {
+  --doc-sidebar-width: 400px !important;  /* Default is 300px */
+}
+
+/* Adjust sidebar text size and wrapping */
+.menu__link {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  /* Better handling of long titles */
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Optional: Adjust spacing for multi-line sidebar items */
+.menu__list-item {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+
+
+
+/* custom.css */
+
+/* Remove right border from sidebar */
+.main-wrapper {
+  border-right: none !important;
+}
+
+aside.theme-doc-sidebar-container {
+  border-right: none !important;
+  /* Add subtle shadow instead of border if desired */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); */
+}
+
+/* Remove bottom border from navbar */
+.navbar {
+  border-bottom: none !important;
+}
+
+/* Increase whitespace for better visual separation */
+.theme-doc-sidebar-container {
+  padding-right: 1.5rem;
+  background: var(--ifm-background-color);
+}
+
+/* Clean up menu items */
+.menu__link {
+  /* Remove background on hover for cleaner look */
+  transition: color 0.2s ease;
+}
+
+.menu__link:hover {
+  background: none;
+  color: var(--ifm-color-primary);
+}
+
+/* Active menu item styling without background */
+.menu__link--active {
+  background: none !important;
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* Add more spacing between menu items for better visual separation */
+.menu__list-item:not(:first-child) {
+}
+
+/* Optional: If you want to soften the background color difference */
+:root {
+  --ifm-background-surface-color: transparent;
+}

@@ -1,0 +1,1 @@
+Struct which defines a `Line` based on protocol [`Geometry`](/docs/models/protocols/geometry).

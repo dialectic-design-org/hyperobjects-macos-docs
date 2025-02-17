@@ -1,0 +1,9 @@
+{
+    "label": "Concepts",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "Documentation about core concepts which define how data, models and views integrate together in higher level functionalities in the Hyperobjects MacOS app."
+    }
+  }
+  
