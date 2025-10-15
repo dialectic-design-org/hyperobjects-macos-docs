@@ -4,18 +4,23 @@ sidebar_position: 1
 
 # Introduction
 
-The Hyperobjects MacOS app is a tool to visualize structures with custom rendering techniques, specifically configured and designed to enhance our understanding of phenomena that we can describe as objects but which are otherwise less tangible.
+The Hyperobjects MacOS app is a tool created as part of a broader initiative to investigate and evolve how we as people interact with each other and our increasingly technological environment. The tool provides various methods to dynamically create visuals with custom rendering techniques. We can see ourselves and our environment as continuums as well as objects. There are distinct and connected phenomena.  Hyperobjects as defined by Timothy Morton very roughly summarised points to the direction of (super-)structures we can conceptuallly define but which are otherwise less tangible. This term is used to describe the tool to indicate the general direction in which 
 
-"lenses" through which these objects can be made "visible":
-- Sub/Super-structure hierarchies
-- Views over time
+To achieve this, a key enabler is detailed control over the rendering pipeline to mix realistic, evocative and illustrative drawing techniques that can blend distinct and continuous features. Further functionalities are audio-reactivity and live coding to manipulate visual aspects in real time, further extending the possibility to experience and explore the ephemeral and 'hyper' aspects of our experiences.
 
-Some scenes which this app contains:
-- Lorenz Attractor
-- Earth Satellites
-- Universe of code
 
-A core feature is detailed control over the rendering pipeline to mix realistic, evocative and illustrative drawing techniques for artistic & communicative effect.
+## Tech stack
+
+This implementation of the tooling is developed specifically for the MacOS platform. Another implementation variation of the tooling might be possible on a more open cross-platform tech stack as well, however for this implementation the choice was to lean into a specific platform to maximise the hardware performance for increased visual effect. In this implementation that means heavy use of the Apple Metal framework which are optimised to make use of M-series chips but also further operating system frameworks such as the AVFAudio framework, CoreMidi frameworks and SwiftUI for OS-native interface controls. To tie these frameworks together in a readable and performant manner, the application is developed in the apple-initiated programming language Swift using largely XCode as the IDE. 
+
+Visual effect deserves to be defined. In technological, practical terms there are some inputs:
+- Complexity of (real-time) algorithms
+- Amount of visual elements
+- Resolution
+- Frame-rate
+- Responsiveness to inputs (controls, audio etc)
+
+
 
 ## Documentation structure
 

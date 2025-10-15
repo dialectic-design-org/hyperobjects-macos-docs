@@ -9,12 +9,17 @@ File that describes all the windows which are available in the application.
 
 The [`WindowInfo`](/docs/models/structs/WindowInfo) struct is used to provide a standardized description of windows. Each window does individually need to be defined again in the [HyperobjectsMacOSApp](/docs/Hyperobjects%20App) definition.
 
+# Primary window
 
-# Windows
+The primary window which is configured in [`Hyperobjects App`](/docs/hyperobjects%20app) is an instance of [`RenderView`](/docs/views/renderview). As primary window it can enter native full-screen mode out-of-the-box.
+
+# Secondary windows
 
 Currently configured windows:
-- [Render View](/docs/views/renderview)
+- [Windows Manager](/docs/views/WindowsManagerView)
+- [Secondary Render View](/docs/views/renderview)
 - [Scene Inputs](/docs/views/SceneInputsView)
+- [Render Configurations](/docs/views/RenderConfigurationsView)
 - [Scene Geometries List](/docs/views/GeometriesListView)
-- [Viewport Front View](/docs/views/Viewport)
+- [Viewport views [x, y, z]](/docs/views/Viewport)
 - [Scene Selector](/docs/views/SceneSelectorView)

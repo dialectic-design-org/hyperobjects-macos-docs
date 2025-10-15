@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# [🏗️] App: HyperobjectsMacOS App
+# [✅] App: HyperobjectsMacOS App
 
 :::info
 
@@ -17,8 +17,18 @@ The HyperobjectsMacOSApp struct is the main entry point that defines the applica
 
 It conforms to the [App](https://developer.apple.com/documentation/swiftui/app) protocol, implementing the `body` property to present a `Scene` with the various windows of the application.
 
-A `@StateObject` is used to maintain one central instance of `SceneManager`, to present the scene in the various windows of the application.
+Currently it serves only two functions:
+- Maintain state
+- Present windows
 
-The SceneManager takes as
+## State
 
-## Window configs
+A `@StateObject` maintains one central instance of [`SceneManager`](/docs/models/classes/SceneManager), to present the scene in the various windows of the application.
+
+A `@StateObject` maintains an instance of [`RenderConfigurations`](/docs/models/classes/RenderConfigurations), which provides specific state which informs the renderer how to draw the picture.
+
+
+## View configuration
+
+The HyperobjectsMacOSApp struct provides a body view whichs defines the main `WindowGroup` and a `Window` for each window as configured. See the documentation on [windows](/docs/windows) for further details.
+

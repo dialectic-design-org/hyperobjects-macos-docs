@@ -7,8 +7,9 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <main>
-        <p>Internal developer documentation for Hyperobjects MacOS app.</p>
+      <main className="container container--narrow padding-vert--xl">
+        <h1>Hyperobjects MacOS Docs</h1>
+        <p>Internal developer <a href="/docs/intro">documentation</a> for Hyperobjects MacOS app.</p>
       </main>
     </Layout>
   );
