@@ -13,7 +13,7 @@ export default function Home(): JSX.Element {
         <p>See <a href="https://socratism.io">Socratism.io</a> for an impression of the capabilities.</p>
 
         <p>Repository links: <a href="https://github.com/dialectic-design-org/hyperobjects-macos-docs">Website</a>, <a href="https://github.com/dialectic-design-org/HyperobjectsMacOS">Code</a></p> 
-        <p>Developed by: <a href="https:erwinhoogerwoord.nl">Erwin Hoogerwoord</a></p> 
+        <p>Developed by: <a href="https://erwinhoogerwoord.nl">Erwin Hoogerwoord</a></p> 
       </main>
     </Layout>
   );
