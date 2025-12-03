@@ -30,5 +30,5 @@ A `@StateObject` maintains an instance of [`RenderConfigurations`](/docs/models/
 
 ## View configuration
 
-The HyperobjectsMacOSApp struct provides a body view whichs defines the main `WindowGroup` and a `Window` for each window as configured. See the documentation on [windows](/docs/windows) for further details.
+The HyperobjectsMacOSApp struct provides a body view whichs defines the main `WindowGroup` and a `Window` for each window as configured. See the documentation on [windows](./Windows) for further details.
 

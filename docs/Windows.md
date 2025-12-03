@@ -11,13 +11,13 @@ The [`WindowInfo`](/docs/models/structs/WindowInfo) struct is used to provide a 
 
 # Primary window
 
-The primary window which is configured in [`Hyperobjects App`](/docs/hyperobjects%20app) is an instance of [`RenderView`](/docs/views/renderview). As primary window it can enter native full-screen mode out-of-the-box.
+The primary window which is configured in [`Hyperobjects App`](/docs/Hyperobjects%20App) is an instance of [`RenderView`](/docs/views/RenderView). As primary window it can enter native full-screen mode out-of-the-box.
 
 # Secondary windows
 
 Currently configured windows:
 - [Windows Manager](/docs/views/WindowsManagerView)
-- [Secondary Render View](/docs/views/renderview)
+- [Secondary Render View](/docs/views/RenderView)
 - [Scene Inputs](/docs/views/SceneInputsView)
 - [Render Configurations](/docs/views/RenderConfigurationsView)
 - [Scene Geometries List](/docs/views/GeometriesListView)

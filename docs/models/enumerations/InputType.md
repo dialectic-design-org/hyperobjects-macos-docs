@@ -8,7 +8,7 @@ Initial implementation of `InputType` present, however the specifics of the diff
 
 Enum which defines the type within [`SceneInput`](/docs/models/structs/SceneInput) and [`RenderConfiguration`](/docs/models/structs/RenderConfiguration) so that further data flow in both scene generation and render pipeline can be type specific.
 
-InputType is used to harmonise input types for both the [scene inputs](/docs/models/classes/geometriesscenebase) and [render configurations](/docs/models/classes/renderconfigurations) and corresponding [controls](/docs/category/controls).
+InputType is used to harmonise input types for both the [scene inputs](/docs/models/classes/GeometriesSceneBase) and [render configurations](/docs/models/classes/RenderConfigurations) and corresponding [controls](/docs/category/controls).
 
 Currently defined input types:
 - `bool`

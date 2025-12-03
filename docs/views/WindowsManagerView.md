@@ -8,7 +8,7 @@ Basic version done for opening the different windows.
 
 WindowsManagerView provides controls to open and close the various windows in the app.
 
-The [available windows](/docs/windows) in the app are defined via central constants.
+The [available windows](/docs/Windows) in the app are defined via central constants.
 
 ## Implementation
 
