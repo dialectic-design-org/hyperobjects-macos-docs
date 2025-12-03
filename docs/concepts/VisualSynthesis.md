@@ -3,12 +3,19 @@ sidebar_position: 2
 ---
 # [🏗️] Visual Synthesis
 
+The Hyperobjects MacOS app provides a toolkit for visual synthesis.
+
 The final drawn picture comes together via drawing techniques which come together via integration across models, views and Apple Metal render code.
 
-The goals of combining different drawing techniques is to be able to control, per element:
+In creating visual experiences the are a variety of artistic and design choices to be made, a very much non-exhaustive list of visual qualities you might want to steer towards could be:
+
 - realism
 - legibility
 - expressiveness
+
+Further choices can be how much you want specific consistent geometries to be present or non-present in the experience.
+
+The visual synthesis pipeline as defined in this app revolves around defining 3-dimensional path geometries and controlling how these are rendered, or better said, using these geometries as further material for a compute pipeline that generates 2-dimensional textures which can be shown on screens, projected on walls, printed or otherwise further manipulated and fed into other systems and artistic workflows.
 
 
 ## Techniques
