@@ -17,8 +17,8 @@ The HyperobjectsMacOSApp struct is the main entry point that defines the applica
 
 It conforms to the [App](https://developer.apple.com/documentation/swiftui/app) protocol, implementing the `body` property to present a `Scene` with the various windows of the application.
 
-Currently it serves only two functions:
-- Maintain state
+It serves two functions:
+- Maintain state across windows
 - Present windows
 
 ## State

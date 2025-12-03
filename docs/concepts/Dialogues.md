@@ -1,6 +1,18 @@
+---
+sidebar_position: 1
+---
+
 # Dialogues
 
-To explore & define concepts dialectically in concert or in collaboration with others, part of the system should allow myself to create & tune visualisations which are dynamically interacting with other systems & performers.
+To explore & define concepts dialectically in concert or in collaboration with others, part of the system should allow for live creation and tuning of visualisations which are dynamically interacting with other systems & performers.
+
+## Synthesis
+
+
+
+## Control modalities
+
+
 
 ## Systems to interface with
 

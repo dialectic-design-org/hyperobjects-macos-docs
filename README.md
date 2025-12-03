@@ -1,6 +1,3 @@
 # HyperobjectsMacOS Docs
 
-Documentation website which describes the internals of the Hyperobjects MacOS app.
-
-Built using docusaurus.
-
+Documentation website which describes the concepts and technical internals of the Hyperobjects MacOS visual synthesis toolkit.

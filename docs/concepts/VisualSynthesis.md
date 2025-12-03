@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# [🏗️] Drawing techniques
+# [🏗️] Visual Synthesis
 
 The final drawn picture comes together via drawing techniques which come together via integration across models, views and Apple Metal render code.
 

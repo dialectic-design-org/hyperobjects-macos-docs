@@ -1,3 +1,5 @@
+@import './base.css';
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -35,11 +37,6 @@
 /* Content area text size */
 .markdown {
   font-size: 0.95rem;
-}
-
-/* Make sidebar wider */
-:root {
-  --doc-sidebar-width: 400px !important;  /* Default is 300px */
 }
 
 /* Adjust sidebar text size and wrapping */
@@ -81,7 +78,6 @@ aside.theme-doc-sidebar-container {
 /* Increase whitespace for better visual separation */
 .theme-doc-sidebar-container {
   padding-right: 1.5rem;
-  background: var(--ifm-background-color);
 }
 
 /* Clean up menu items */
@@ -91,13 +87,11 @@ aside.theme-doc-sidebar-container {
 }
 
 .menu__link:hover {
-  background: none;
   color: var(--ifm-color-primary);
 }
 
 /* Active menu item styling without background */
 .menu__link--active {
-  background: none !important;
   color: var(--ifm-color-primary);
   font-weight: 600;
 }
@@ -106,7 +100,24 @@ aside.theme-doc-sidebar-container {
 .menu__list-item:not(:first-child) {
 }
 
-/* Optional: If you want to soften the background color difference */
-:root {
-  --ifm-background-surface-color: transparent;
+.navbar {
+  background-color: transparent;
+  box-shadow: none !important;
+}
+
+.card {
+  box-shadow: none !important;
+  border: 0px solid !important;
+  border-radius: 0px;
+}
+
+.card:hover {
+  text-decoration: underline;
+}
+
+p a:before {
+content: "[";
+}
+p a:after {
+content: "]";
 }

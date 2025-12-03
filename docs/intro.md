@@ -1,53 +1,54 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 # Introduction
 
-The Hyperobjects MacOS app is a tool created as part of a broader initiative to investigate and evolve how we as people interact with each other and our increasingly technological environment. The tool provides various methods to dynamically create visuals with custom rendering techniques. We can see ourselves and our environment as continuums as well as objects. There are distinct and connected phenomena.  Hyperobjects as defined by Timothy Morton very roughly summarised points to the direction of (super-)structures we can conceptuallly define but which are otherwise less tangible. This term is used to describe the tool to indicate the general direction in which 
+The Hyperobjects MacOS app provides a live visualisation toolkit. It can be used to construct dynamic, interactive experiences with a mixture of pre-compiled scenes and live coding. The toolkit has mainly been conceived within the design & artistic practices of [Erwin Hoogerwoord](https://erwinhoogerwoord.nl). This implementation purposefully targets the capabilities of the MacOS platform & Apple tech stack. Making it publicly available is mainly done with the purpose of inspiring other implementations and tooling developments. 
 
-To achieve this, a key enabler is detailed control over the rendering pipeline to mix realistic, evocative and illustrative drawing techniques that can blend distinct and continuous features. Further functionalities are audio-reactivity and live coding to manipulate visual aspects in real time, further extending the possibility to experience and explore the ephemeral and 'hyper' aspects of our experiences.
+This documentation website describes the design and implemenation of this toolkit.
 
+Code for the toolkit can be found at:
+
+[https://github.com/dialectic-design-org/HyperobjectsMacOS](https://github.com/dialectic-design-org/HyperobjectsMacOS)
+
+Code for this documentation website can be found at:
+
+[https://github.com/dialectic-design-org/hyperobjects-macos-docs](https://github.com/dialectic-design-org/hyperobjects-macos-docs)
+
+
+## Toolkit
+
+Hyperobjects MacOS is constructed as a toolkit for visual synthesis. The toolkit provides various methods to create dynamic, real-time visual experiences with configurable rendering techniques. It is developed as part of a broader initiative to investigate and evolve how people's interactions with each other and their increasingly technological environments.
+
+
+## Hyperobjects
+
+The toolkit derives its name from concept of *Hyperobjects* as defined by Timothy Morton. Very roughly summarised, the term *Hyperobjects* points to the direction of entities which exceed the capacities of ordinary human object perception.
+
+Building on the theory that cognition is [embodied](https://plato.stanford.edu/entries/embodied-cognition/), the tools in this toolkit are designed to create visual experiences which are in a live feedback loop with direct human action. The algorithms producing visual experiences conceptually extend the cognitive system to perceive more and different objects, entities and phenomena.
+
+## Visual synthesis
+
+Core to this toolkit is a real-time rendering pipeline which revolves around 3d-defined paths as central data structure as opposed to polygons in a traditional fragment shader pipeline. The rendering pipeline allows for fine-grained control over how 3d-defined paths appear in screen space, with among other things, for example screen-space consistent control over line width. This rendering capability allows for precise artistic and design choices in the translation of the hyperspace as defined in algorithms and 3D+ data structures to perceivable visual elements in the "flat" 2D embodiment of pixels in screens, projectors or prints.
+
+Further functionalities are audio-reactivity and live coding to generate and manipulate geometries, parameters and algorithms in the visual synthesis in real time, enabling real-time exploration of dimensionality, chaotic spaces and live ideation.
+
+The visual synthesis pipeline is described in more detail in the dedicated concept page on [*Visual Synthesis*](/docs/concepts/VisualSynthesis.md).
+
+See [Socratism.io](https://socratism.io) for an impression of visual experiences created with this toolkit.
 
 ## Tech stack
 
-This implementation of the tooling is developed specifically for the MacOS platform. Another implementation variation of the tooling might be possible on a more open cross-platform tech stack as well, however for this implementation the choice was to lean into a specific platform to maximise the hardware performance for increased visual effect. In this implementation that means heavy use of the Apple Metal framework which are optimised to make use of M-series chips but also further operating system frameworks such as the AVFAudio framework, CoreMidi frameworks and SwiftUI for OS-native interface controls. To tie these frameworks together in a readable and performant manner, the application is developed in the apple-initiated programming language Swift using largely XCode as the IDE. 
+The concepts surrounding and expressed within this toolkit could be implemented in more or less open tech stacks. For this implementation, the choice was made to embrace the integrated compute capabilities of the MacOS platform. Getting as close to bare metal as possible via the [Apple Metal framework](https://en.wikipedia.org/wiki/Metal_(API)). This framework provides low-level tooling with direct control over M-series GPU data flows and kernel code execution. This is further combined with other MacOS operating system frameworks such as the AVFAudio framework, CoreMidi frameworks and SwiftUI for OS-native interface controls. To tie these frameworks together in a readable and performant manner, the application is developed in the Apple-developed open-source programming language [Swift](https://en.wikipedia.org/wiki/Swift_(programming_language)), using largely Xcode as the IDE and tooling to compile the software. 
 
-Visual effect deserves to be defined. In technological, practical terms there are some inputs:
+The choice for MacOS platform was based on prioritizing performance and ease of development over openness of the tech stack.
+
+Defining visual synthesis performance along the folowing parameters:
 - Complexity of (real-time) algorithms
 - Amount of visual elements
 - Resolution
 - Frame-rate
 - Responsiveness to inputs (controls, audio etc)
 
-
-
-## Documentation structure
-
-Page tree and pages generally follow the same structure as the codebase itself, except for [*Concepts*](/docs/category/concepts).
-
-At a high level the codebase is organized in three key segments:
-
-- [*Models*](/docs/category/models) defines the core data structures for generating various scenes and geometries.
-
-- [*Views*](/docs/category/views) contains the main Swift(UI) and render pipeline code that make up the app to display/manipulate the scenes and geometries.
-
-- [*Data*](/docs/category/data) instantiates various scenes and defines specific geometry-generating classes used within the scenes. 
-
-
-## Development states
-
-Documentation describing concepts & envisioned functionality ideally precedes implementation. However implementation in turn triggers reflection and user experiences that inspire further functions. 
-
-At a high level then, new functions and components in the software can be in a *Draft* descriptive state about to-be-implemented functionality. Or in an *Under construction* state, where a component is partially functioning but still elements of the component are to be further detailed out or still to-be implemented. 
-
-Or a component is fully *Ready*, (for now...).
-
-- Draft ✍️
-- Under construction 🏗️
-- Ready ✅
-
-
-## Implementation
-
-The entry point for the MacOS app itself is the [HyperobjectsApp](/docs/Hyperobjects%20App).
+The trade-off is this specific implementation of the concepts can only run on the MacOS platform. However with the source code available, it can serve as reference for implementations in other tech stacks.
